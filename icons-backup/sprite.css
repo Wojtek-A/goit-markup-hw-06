@@ -1,0 +1,86 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.linkedin {
+  width: 32px;
+  height: 32px;
+  background-position: 0 0;
+}
+.facebook {
+  width: 18px;
+  height: 32px;
+  background-position: 0 -32px;
+}
+.twitter {
+  width: 36px;
+  height: 32px;
+  background-position: 0 -64px;
+}
+.instagram {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -96px;
+}
+.antena {
+  width: 30px;
+  height: 32px;
+  background-position: 0 -128px;
+}
+.astronaut {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -160px;
+}
+.Client1 {
+  width: 27px;
+  height: 32px;
+  background-position: 0 -192px;
+}
+.Client2 {
+  width: 24px;
+  height: 32px;
+  background-position: 0 -224px;
+}
+.Client3 {
+  width: 34px;
+  height: 32px;
+  background-position: 0 -256px;
+}
+.Client4 {
+  width: 65px;
+  height: 32px;
+  background-position: 0 -288px;
+}
+.Client5 {
+  width: 43px;
+  height: 32px;
+  background-position: 0 -320px;
+}
+.Client6 {
+  width: 67px;
+  height: 32px;
+  background-position: 0 -352px;
+}
+.clock {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -384px;
+}
+.diagram {
+  width: 32px;
+  height: 32px;
+  background-position: -32px -384px;
+}
+.envelope {
+  width: 43px;
+  height: 32px;
+  background-position: 0 -416px;
+}
+.smartphone {
+  width: 20px;
+  height: 32px;
+  background-position: 0 -448px;
+}
+
