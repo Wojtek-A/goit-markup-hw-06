@@ -156,7 +156,6 @@ img {
       rgba(47, 48, 58, 0.4)
     ),
     url("https://raw.githubusercontent.com/Wojtek-A/goit-markup-hw-06/main/images/main.jpg");
-  /* background-image: url("https://raw.githubusercontent.com/Wojtek-A/goit-markup-hw-04/main/images/main.jpg"); */
   background-size: 1600px auto;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -196,9 +195,6 @@ img {
   z-index: 1;
   top: 0px;
   background-color: rgba(0, 0, 0, 0.2);
-  /* animation-name: modal;
-  animation-duration: 5s;
-  animation-timing-function: linear; */
   transition: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: linear;
@@ -223,8 +219,131 @@ img {
     0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   background-color: #fff;
 }
+.modal > h3 {
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: -2px;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 40px auto 40px;
+  color: #757575;
+    font-size: 12px;
+   line-height: 14px;
+  letter-spacing: 0.01em;
+ }
+.modal-form-input {
+  height: 35px;
+  width: 413px;
+  margin: 4px auto -10px auto;
+  border-radius: 4px;
+  padding-left: 32px;
+  outline: none;
+  appearance: none;
+  border: 1px solid #21212133;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-icon {
+  position: relative;
+  top: -18px;
+  left: 13px;
+  transition-property: fill, boxshadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-input:focus + .modal-form-icon {
+  fill: #2196f3;
+}
+.modal-form-textarea {
+  height: 94px;
+  width: 422px;
+  padding: 12px;
+  outline: none;
+  appearance: none;
+  resize: none;
+  border: 1px solid #21212133;
+  margin: 2px auto 20px auto;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+.modal-form-field-agreement {
+  position: relative;
+  top: 3px;
+  left: 11px;
+}
+.modal-form-input-agreement {
+  position: absolute;
+  top: -2px;
+  left: 1px;
+  z-index: 3;
+  cursor: pointer;
+  opacity: 0;
+}
+.modal-form-label-agreement {
+  position: absolute;
+  top: 1px;
+  left: 26px;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.agreement-unchecked-icon {
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  z-index: 2;
+}
+.agreement-checked-icon {
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  z-index: 2;
+  visibility: hidden;
+}
+.modal-form-input-agreement:checked ~ .agreement-checked-icon {
+  position: absolute;
+  visibility: visible;
+  fill: #2196f3;
+}
+.modal-form-input:hover,
+.modal-form-input:focus,
+.modal-form-input:not(:placeholder-shown),
+.modal-form-textarea:hover,
+.modal-form-textarea:focus,
+.modal-form-textarea:not(:placeholder-shown) {
+  border: 1px solid #2196f3;
+}
+.modal-form-input:not(:placeholder-shown) + .modal-form-icon {
+  fill: #2196f3;
+}
+.modal-form-button {
+  padding: 10px 0;
+  margin: 52px 124px;
+  background-color: #2196f3;
+  color: #fff;
+  border: 0px;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
+    0px 1px 3px 0px #0000001f;
+}
 .modal-x {
-  margin: 8px auto auto 490px;
+  margin: 8px 8px auto 490px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #fff;
@@ -233,33 +352,14 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-form-button:hover,
+.modal-form-button:focus,
 .modal-x:hover,
 .modal-x:focus {
   cursor: pointer;
   fill: #fff;
   background-color: #2196f3;
 }
-
-/* @keyframes modal {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-  }
-    100% {
-    opacity: 1;
-    visibility: visible;
-  }
-} 
-@keyframes modalClose {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}  */
 .list {
   list-style-type: none;
   display: flex;
@@ -324,7 +424,7 @@ img {
   text-align: center;
   background-color: #f5f4fa;
   padding-top: 94px;
-}
+  }
 .employees {
   display: flex;
   justify-content: space-between;
@@ -337,7 +437,6 @@ img {
   text-align: center;
   background-color: white;
   width: 270px;
-  /* height: 428px; */
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
   box-shadow: 0 2px rgba(0, 0, 0, 0.2);
@@ -375,6 +474,7 @@ img {
 }
 .our-clients {
   text-align: center;
+  letter-spacing: 00.06em;
 }
 .client-list {
   padding-top: 50px;
@@ -468,10 +568,49 @@ img {
 .social-link:hover,
 .social-link:focus {
   cursor: pointer;
-  /* fill: #fff; */
   background-color: #2196f3;
 }
-/* ______________________________NOTE:PORTFOLIO WEBSIDE */
+.newsletter-footer {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-end;
+}
+.newsletter-footer-text {
+  margin-top: 11px;
+  margin-left: 9px;
+  margin-bottom: 0px;
+  color: #fff;
+  font-size: 14px;
+}
+.newsletter-footer-email {
+  margin-left: 9px;
+  margin-top: 21px;
+  width: 339px;
+  height: 46px;
+  padding-left: 16px;
+  border-radius: 4px;
+  border: 1px solid #ffffff4d;
+  background-color: #2f303a;
+  color: #ffffff99;
+  font-family: Roboto;
+  font-size: 16px;
+}
+.newsletter-button {
+  margin-left: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2196f3;
+  color: #fff;
+  fill: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+/* ______________________________NOTE:PORTFOLIO WEBSIDE______________________________ */
 
 .portfolio-buttons-list {
   list-style-type: none;

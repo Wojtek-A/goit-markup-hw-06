@@ -33,7 +33,7 @@
               width="16"
               height="12"
               y="2"
-              href="./images/sprite.svg#envelope"
+              href="./images/icons.svg#envelope"
             ></use>
             <text x="26" y="14">
               <a href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -47,7 +47,7 @@
               height="16"
               x="1"
               y="2"
-              href="./images/sprite.svg#smartphone"
+              href="./images/icons.svg#smartphone"
             ></use>
             <text x="20" y="14">
               <a href="tel:+48111111111">+48 111 111 111</a>
@@ -68,17 +68,99 @@
         </div>
         <div data-modal class="modal-backdrop is-hidden">
           <div class="modal">
-            <div data-modal-close>
-              <svg data-modal-close class="modal-x" width="30" height="30">
-                <use
-                  width="8"
-                  height="8"
-                  x="11"
-                  y="11"
-                  href="./images/sprite.svg#x"
-                ></use>
-              </svg>
-            </div>
+            <svg data-modal-close class="modal-x" width="30" height="30">
+              <use
+                width="11"
+                height="11"
+                x="10"
+                y="10"
+                href="./images/icons.svg#x"
+              ></use>
+            </svg>
+            <h3>Zostaw swoje dane w formularzu poniżej</h3>
+            <form class="modal-form">
+              <label>
+                Imie
+                <input
+                  class="modal-form-input"
+                  type="text"
+                  name="user_name"
+                  placeholder=" "
+                  required
+                  minlength="3"
+                  maxlength="15"
+                  pattern="^[a-zA-Z]+$"
+                  title="Możliwe litery a-z, A-Z,"
+                />
+                <svg class="modal-form-icon" width="18" height="18">
+                  <use href="./images/icons.svg#newsletter-user"></use>
+                </svg>
+              </label>
+              <label>
+                Telefon
+                <input
+                  class="modal-form-input"
+                  type="tel"
+                  name="phone"
+                  placeholder=" "
+                  required
+                  pattern="^[0-9]+$"
+                  title="Proszę wpisać cyfry"
+                  minlength="6"
+                  maxlength="25"
+                />
+                <svg class="modal-form-icon" width="18" height="18">
+                  <use href="./images/icons.svg#newsletter-phone"></use>
+                </svg>
+              </label>
+              <label>
+                Email
+                <input
+                  class="modal-form-input"
+                  type="email"
+                  name="email"
+                  placeholder=" "
+                  required
+                  minlength="5"
+                  maxlength="30"
+                />
+                <svg class="modal-form-icon" width="18" height="18">
+                  <use href="./images/icons.svg#newsletter-envelope"></use>
+                </svg>
+              </label>
+              <label>
+                Komentarz
+                <textarea
+                  class="modal-form-textarea"
+                  name="coment"
+                  rows="6"
+                  placeholder="Wprowadź tekst"
+                  maxlength="500"
+                ></textarea>
+              </label>
+              <div class="modal-form-field-agreement">
+                <input
+                  type="checkbox"
+                  class="modal-form-input-agreement"
+                  name="agreement"
+                  value="agreement"
+                  id="agreement"
+                />
+                <label class="modal-form-label-agreement" for="agreement"
+                  >Oświadczam iż akceptuję <a href="#"> Regulamin</a> i
+                  <a href="#">Politykę Prywatności.</a></label
+                >
+                <svg class="agreement-unchecked-icon" width="16" height="15">
+                  <use
+                    href="./images/icons.svg#newsletter-icon-unchecked"
+                  ></use>
+                </svg>
+                <svg class="agreement-checked-icon" width="16" height="15">
+                  <use href="./images/icons.svg#newsletter-icon-checked"></use>
+                </svg>
+              </div>
+              <button class="modal-form-button" type="submit">Wyślij</button>
+            </form>
           </div>
         </div>
       </section>
@@ -92,7 +174,7 @@
                 height="70"
                 x="102.5"
                 y="25.16"
-                href="./images/sprite.svg#antena"
+                href="./images/icons.svg#antena"
               ></use>
             </svg>
             <h3 class="list-headline">LOREM IPSUM</h3>
@@ -109,7 +191,7 @@
                 height="70"
                 x="102.5"
                 y="25.16"
-                href="./images/sprite.svg#clock"
+                href="./images/icons.svg#clock"
               ></use>
             </svg>
             <h3 class="list-headline">LOREM IPSUM</h3>
@@ -126,7 +208,7 @@
                 height="70"
                 x="102.5"
                 y="25.16"
-                href="./images/sprite.svg#diagram"
+                href="./images/icons.svg#diagram"
               ></use>
             </svg>
             <h3 class="list-headline">LOREM IPSUM</h3>
@@ -143,7 +225,7 @@
                 height="70"
                 x="102.5"
                 y="25.16"
-                href="./images/sprite.svg#astronaut"
+                href="./images/icons.svg#astronaut"
               ></use>
             </svg>
             <h3 class="list-headline">LOREM IPSUM</h3>
@@ -207,7 +289,7 @@
                     class="use"
                     x="12"
                     y="12"
-                    href="./images/sprite.svg#instagram"
+                    href="./images/icons.svg#instagram"
                   ></use>
                 </svg>
               </li>
@@ -219,7 +301,7 @@
                     class="use"
                     x="12"
                     y="14"
-                    href="./images/sprite.svg#twitter"
+                    href="./images/icons.svg#twitter"
                   ></use>
                 </svg>
               </li>
@@ -231,7 +313,7 @@
                     class="use"
                     x="17"
                     y="12"
-                    href="./images/sprite.svg#facebook"
+                    href="./images/icons.svg#facebook"
                   ></use>
                 </svg>
               </li>
@@ -243,7 +325,7 @@
                     class="use"
                     x="12"
                     y="12"
-                    href="./images/sprite.svg#linkedin"
+                    href="./images/icons.svg#linkedin"
                   ></use>
                 </svg>
               </li>
@@ -267,7 +349,7 @@
                     class="use"
                     x="12"
                     y="12"
-                    href="./images/sprite.svg#instagram"
+                    href="./images/icons.svg#instagram"
                   ></use>
                 </svg>
               </li>
@@ -279,7 +361,7 @@
                     class="use"
                     x="12"
                     y="14"
-                    href="./images/sprite.svg#twitter"
+                    href="./images/icons.svg#twitter"
                   ></use>
                 </svg>
               </li>
@@ -291,7 +373,7 @@
                     class="use"
                     x="17"
                     y="12"
-                    href="./images/sprite.svg#facebook"
+                    href="./images/icons.svg#facebook"
                   ></use>
                 </svg>
               </li>
@@ -303,7 +385,7 @@
                     class="use"
                     x="12"
                     y="12"
-                    href="./images/sprite.svg#linkedin"
+                    href="./images/icons.svg#linkedin"
                   ></use>
                 </svg>
               </li>
@@ -327,7 +409,7 @@
                     class="use"
                     x="12"
                     y="12"
-                    href="./images/sprite.svg#instagram"
+                    href="./images/icons.svg#instagram"
                   ></use>
                 </svg>
               </li>
@@ -339,7 +421,7 @@
                     class="use"
                     x="12"
                     y="14"
-                    href="./images/sprite.svg#twitter"
+                    href="./images/icons.svg#twitter"
                   ></use>
                 </svg>
               </li>
@@ -351,7 +433,7 @@
                     class="use"
                     x="17"
                     y="12"
-                    href="./images/sprite.svg#facebook"
+                    href="./images/icons.svg#facebook"
                   ></use>
                 </svg>
               </li>
@@ -363,7 +445,7 @@
                     class="use"
                     x="12"
                     y="12"
-                    href="./images/sprite.svg#linkedin"
+                    href="./images/icons.svg#linkedin"
                   ></use>
                 </svg>
               </li>
@@ -387,7 +469,7 @@
                     class="use"
                     x="12"
                     y="12"
-                    href="./images/sprite.svg#instagram"
+                    href="./images/icons.svg#instagram"
                   ></use>
                 </svg>
               </li>
@@ -399,7 +481,7 @@
                     class="use"
                     x="12"
                     y="14"
-                    href="./images/sprite.svg#twitter"
+                    href="./images/icons.svg#twitter"
                   ></use>
                 </svg>
               </li>
@@ -411,7 +493,7 @@
                     class="use"
                     x="17"
                     y="12"
-                    href="./images/sprite.svg#facebook"
+                    href="./images/icons.svg#facebook"
                   ></use>
                 </svg>
               </li>
@@ -423,7 +505,7 @@
                     class="use"
                     x="12"
                     y="12"
-                    href="./images/sprite.svg#linkedin"
+                    href="./images/icons.svg#linkedin"
                   ></use>
                 </svg>
               </li>
@@ -441,7 +523,7 @@
                 height="46.67"
                 x="64.5"
                 y="22.66"
-                href="./images/sprite.svg#client1"
+                href="./images/icons.svg#client1"
               ></use>
             </svg>
           </li>
@@ -452,7 +534,7 @@
                 height="52"
                 x="65"
                 y="20"
-                href="./images/sprite.svg#client2"
+                href="./images/icons.svg#client2"
               ></use>
             </svg>
           </li>
@@ -463,7 +545,7 @@
                 height="41.18"
                 x="63.27"
                 y="25.41"
-                href="./images/sprite.svg#client3"
+                href="./images/icons.svg#client3"
               ></use>
             </svg>
           </li>
@@ -474,7 +556,7 @@
                 height="40.62"
                 x="42.78"
                 y="25.69"
-                href="./images/sprite.svg#client4"
+                href="./images/icons.svg#client4"
               ></use>
             </svg>
           </li>
@@ -485,7 +567,7 @@
                 height="45.43"
                 x="53.73"
                 y="23.29"
-                href="./images/sprite.svg#client5"
+                href="./images/icons.svg#client5"
               ></use>
             </svg>
           </li>
@@ -496,7 +578,7 @@
                 height="43.93"
                 x="38.10"
                 y="24.03"
-                href="./images/sprite.svg#client6"
+                href="./images/icons.svg#client6"
               ></use>
             </svg>
           </li>
@@ -540,7 +622,7 @@
                       class="use"
                       x="12"
                       y="12"
-                      href="./images/sprite.svg#instagram"
+                      href="./images/icons.svg#instagram"
                     ></use>
                   </svg>
                 </li>
@@ -552,7 +634,7 @@
                       class="use"
                       x="12"
                       y="14"
-                      href="./images/sprite.svg#twitter"
+                      href="./images/icons.svg#twitter"
                     ></use>
                   </svg>
                 </li>
@@ -564,7 +646,7 @@
                       class="use"
                       x="17"
                       y="12"
-                      href="./images/sprite.svg#facebook"
+                      href="./images/icons.svg#facebook"
                     ></use>
                   </svg>
                 </li>
@@ -576,12 +658,41 @@
                       class="use"
                       x="12"
                       y="12"
-                      href="./images/sprite.svg#linkedin"
+                      href="./images/icons.svg#linkedin"
                     ></use>
                   </svg>
                 </li>
               </ul>
             </div>
+          </li>
+          <li>
+            <h4 class="newsletter-footer-text">ZAPISZ SIĘ DO NEWSLETTERA</h4>
+            <form class="newsletter-footer">
+              <label>
+                <input
+                  class="newsletter-footer-email"
+                  type="email"
+                  name="newsletter-email"
+                  placeholder="E-mail"
+                  minlength="5"
+                  maxlength="30"
+                  required
+                />
+              </label>
+              <button type="submit" class="newsletter-button">
+                <svg width="189" height="39">
+                  <text x="37" y="30">Zapisz się</text>
+                  <use
+                    width="24"
+                    height="24"
+                    x="142"
+                    y="13"
+                    class="use"
+                    href="./images/icons.svg#newsletter-icon"
+                  ></use>
+                </svg>
+              </button>
+            </form>
           </li>
         </ul>
       </div>
