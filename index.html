@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
@@ -21,10 +18,12 @@
       <a class="logo-menu" href="./index.html"
         >Web<span class="logo-color-black">Studio</span></a
       >
-      <nav class="menu-links-portfolio">
-        <a class="agency-link line" href="./index.html">Agencja</a>
+      <nav class="menu-links">
+        <a class="agency-link line menu-text-color" href="./index.html"
+          >Agencja</a
+        >
         <a class="portfolio-link" href="./portfolio.html">Portfolio</a>
-        <a class="contact-link" href="#">Kontakty</a>
+        <a class="contact-link" href="#">Kontakt</a>
       </nav>
       <ul class="menu-contacts">
         <li>
@@ -72,8 +71,8 @@
               <use
                 width="11"
                 height="11"
-                x="10"
-                y="10"
+                x="9"
+                y="9"
                 href="./images/icons.svg#x"
               ></use>
             </svg>
@@ -145,6 +144,7 @@
                   name="agreement"
                   value="agreement"
                   id="agreement"
+                  required
                 />
                 <label class="modal-form-label-agreement" for="agreement"
                   >Oświadczam iż akceptuję <a href="#"> Regulamin</a> i
